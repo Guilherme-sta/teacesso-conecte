@@ -8,35 +8,46 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* TEAcesso brand */
+    --background: 0 0% 96%; /* #F5F5F5 */
+    --foreground: 240 10% 12%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 240 10% 12%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 240 10% 12%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 262 83% 58%; /* #7C3AED purple */
+    --primary-foreground: 0 0% 100%;
+    --primary-soft: 262 83% 96%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 330 81% 60%; /* #EC4899 pink */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-soft: 330 81% 96%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 240 5% 92%;
+    --muted-foreground: 240 4% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 330 81% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --whatsapp: 142 70% 45%;
+    --whatsapp-foreground: 0 0% 100%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(330 81% 60%) 100%);
+    --gradient-soft: linear-gradient(135deg, hsl(262 83% 97%) 0%, hsl(330 81% 97%) 100%);
+    --shadow-card: 0 4px 20px -8px hsl(262 83% 58% / 0.15);
+    --shadow-soft: 0 2px 10px -4px hsl(240 10% 12% / 0.08);
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 240 6% 88%;
+    --input: 240 6% 88%;
+    --ring: 262 83% 58%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -101,5 +112,14 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Nunito', system-ui, -apple-system, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
   }
 }
